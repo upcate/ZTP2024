@@ -42,13 +42,13 @@ class FizzBuzzKataTest extends TestCase
             'index' => 1,
             'expectedNumber' => '2'
         ];
-        yield 'should return 51 for index 50' => [
+        yield 'should return "Fizz" for index 50' => [
             'index' => 50,
-            'expectedNumber' => '51'
+            'expectedNumber' => 'Fizz'
         ];
         yield 'should return 100 for index 99' => [
             'index' => 99,
-            'expectedNumber' => '100'
+            'expectedNumber' => 'Buzz'
         ];
         yield 'should return "Fizz" for index 2' => [
             'index' => 2,
@@ -66,6 +66,29 @@ class FizzBuzzKataTest extends TestCase
             'index' => 56,
             'expectedNumber' => 'Fizz'
         ];
-
+        yield 'should return "Buzz" for index 4' => [
+            'index' => 4,
+            'expectedNumber' => 'Buzz'
+        ];
+        yield 'should return "Buzz" for index 34' => [
+            'index' => 34,
+            'expectedNumber' => 'Buzz'
+        ];
+        yield 'should return "Buzz" for index 49' => [
+            'index' => 49,
+            'expectedNumber' => 'Buzz'
+        ];
+        yield 'should return "FizzBuzz" for index 29' => [
+            'index' => 29,
+            'expectedNumber' => 'FizzBuzz'
+        ];
+        yield 'should return "FizzBuzz" for index 14' => [
+            'index' => 14,
+            'expectedNumber' => 'FizzBuzz'
+        ];
+        yield 'should return "FizzBuzz" for index 44' => [
+            'index' => 44,
+            'expectedNumber' => 'FizzBuzz'
+        ];
     }
 }
